@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        margin: auto;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    label {
+        margin: 10px ;
+        font-size: 25px;
+    }
+    p {
+        font-size: 20px;
+        margin-top: 10px;
+        text-align: center;
+        
+    }
+    input {
+        padding: 10px;
+        margin: 10px;
+        font-size: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    button{
+        padding: 10px 20px;
+        background-color: rgb(238, 4, 4);
+        border: 2px solid black;
+        border-radius: 5px;
+        font-size: large;
+        font-weight: bold;
+        cursor: pointer; 
+    }
+    button:hover {
+        background-color: rgb(9, 255, 0);
+        color: rgb(0, 0, 0);
+    }
+    button#login{
+        background-color: rgb(4, 238, 43);
+        margin: auto;
+        margin-bottom: 0px;
+        color: rgb(0, 0, 0);
+    }
+    button#login:hover {
+        background-color: rgb(255, 0, 0);
+        color: rgb(0, 0, 0);
+    }
+        </style>
+</head>
+<body>
+    <form action="home page.html" method="get">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
+        <button type="submit" onclick="window.open('home page.html','_self')">Signup</button>
+        
+        <p>Already have an account?</p>
+        <button id="login" onclick="window.open('login.html','_self')">Login</button>
+    </form>
+</body>
+</html>

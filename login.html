@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page    </title>
+</head>
+<style>
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        margin: auto;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    label {
+        margin: 10px ;
+        font-size: 25px;
+    }
+    p {
+        font-size: 20px;
+        margin-top: 10px;
+        text-align: center;
+        
+    }
+    input {
+        padding: 10px;
+        margin: 10px;
+        font-size: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    button{
+        padding: 10px 20px;
+        background-color: rgb(238, 4, 4);
+        border: 2px solid black;
+        border-radius: 5px;
+        font-size: large;
+        font-weight: bold;
+        cursor: pointer; 
+    }
+    button:hover {
+        background-color: rgb(9, 255, 0);
+        color: rgb(0, 0, 0);
+    }
+    button#signup{
+        background-color: rgb(4, 238, 43);
+        margin: auto;
+        margin-bottom: 0px;
+        color: rgb(0, 0, 0);
+    }
+    button#signup:hover {
+        background-color: rgb(255, 0, 0);
+        color: rgb(0, 0, 0);
+    }
+
+
+    
+</style>
+<body>
+        <form action="home page.html" method="get">
+            <h1>Login</h1>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your name" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <p><a href="forgetpassword.html">Forget password</a></p>
+            <button type="submit">Login</button>
+            <p>Dont have an account?</p>
+            <button type="button" onclick="window.open('signup.html','_self')" id="signup" >Signup</button>
+        </form>
+</body>
+</html>
